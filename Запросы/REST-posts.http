@@ -1,0 +1,14 @@
+POST http://localhost:3000/api/posts
+Content-Type: application/json
+
+{
+  "title": "Статья 1",
+  "content": "Текст статьи",
+  "userId": 3
+}
+
+###
+GET http://localhost:3000/api/posts
+Accept: application/json
+
+###

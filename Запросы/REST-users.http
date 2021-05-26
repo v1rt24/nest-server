@@ -1,0 +1,29 @@
+### Создание пользователя
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+  "email": "w@ws.ww",
+  "password": "wdwdw"
+}
+
+### Обновление записи пользователя
+PUT http://localhost:3000/api/users/1
+Content-Type: application/json
+
+{
+  "email": "asd@qwe.rt"
+}
+
+### Удаление пользователя по ID
+DELETE http://localhost:3000/api/users/7
+Content-Type: application/json
+
+### Получаем всех пользователей
+GET http://localhost:3000/api/users
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtQHF3MnMuZmYiLCJpZCI6MTAsInJvbGUiOnsiaWQiOjIsInZhbHVlIjoidXNlciIsImRlc2NyaXB0aW9uIjoi0J_QvtC70YzQt9C-0LLQsNGC0LXQu9GMIiwiY3JlYXRlZEF0IjoiMjAyMS0wNS0yNlQxMTozMTowMy4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wNS0yNlQxMTozMTowMy4wMDBaIn0sImlhdCI6MTYyMjA0ODI1MiwiZXhwIjoxNjIyMTM0NjUyfQ.wOUUFKQx21C8P83FNjHN4sjTVpbaUgqbHES_bl_bS44
+
+### Выборка определённого пользователя по почте
+GET http://localhost:3000/api/users/w@w.ww
+Accept: application/json
